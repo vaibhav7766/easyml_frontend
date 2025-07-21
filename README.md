@@ -1,3 +1,36 @@
+# EasyML Frontend
+
+This project is a Next.js + Tailwind CSS frontend for an end-to-end machine learning pipeline. It interacts with a FastAPI backend via the following endpoints:
+
+- `/dashboard`: ML project overview and key metrics
+- `/upload`: Upload datasets (CSV, Excel, JSON)
+- `/preprocessing`: Data cleaning, normalization, encoding, etc.
+- `/visualizations`: Data visualizations (histograms, scatter plots, etc.)
+- `/feature_selection`: Feature importance, dimension reduction
+- `/choosing_models`: Select/configure ML algorithms and hyperparameters
+- `/results`: Model evaluation, performance, and downloadable reports
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+- `src/app/` - Main app pages and routing
+- `src/components/` - Reusable UI components
+- `tailwind.config.js` - Tailwind CSS configuration
+
+## Notes
+- This project uses **JavaScript only** (no TypeScript).
+- All backend communication is via the FastAPI endpoints listed above.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
